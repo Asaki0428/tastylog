@@ -35,7 +35,7 @@ router.get("/", async (req, res, next) => {
       keyword,
       count,
       results,
-      pagenaiton: {
+      pagenation: {
         max: Math.ceil(count / MAX_ITEMS_PER_PAGE),
         current: page
       }
